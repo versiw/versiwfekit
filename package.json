@@ -1,0 +1,42 @@
+{
+  "name": "versiwfekit",
+  "version": "1.0.0",
+  "description": "Frontend Engineering Kit used by versiw",
+  "author": "versiw",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "simple-git-hooks",
+    "build": "pnpm -r --filter=./packages/* run build",
+    "format": "prettier --write --cache --ignore-unknown .",
+    "commit": "pnpm versiwfekit-verify-commit",
+    "dev:vfk": "pnpm --filter create-vfk run build  && pnpm vfk",
+    "dev:commit": "pnpm --filter verify-commit run build  && pnpm versiwfekit-verify-commit"
+  },
+  "keywords": [
+    "versiw",
+    "versiwfekit",
+    "prettier",
+    "prettier-config"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@versiwfekit/prettier": "workspace:*",
+    "@versiwfekit/verify-commit": "workspace:*",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "simple-git-hooks": "^2.12.1",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3",
+    "vite-plugin-dts": "^4.5.3"
+  },
+  "prettier": "@versiwfekit/prettier",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged --concurrent false"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "create-vfk",
+  "version": "1.0.0",
+  "description": "versiwfekit 前端工具集 cli 工具，一键配置",
+  "author": "versiw",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "bin": {
+    "vfk": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "keywords": [
+    "versiw",
+    "versiwfekit",
+    "prettier",
+    "prettier-config"
+  ],
+  "devDependencies": {
+    "@clack/prompts": "^0.10.0",
+    "commander": "^13.1.0",
+    "cross-spawn": "^7.0.6",
+    "unbuild": "^3.5.0"
+  }
+}

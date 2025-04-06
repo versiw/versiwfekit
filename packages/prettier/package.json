@@ -1,0 +1,27 @@
+{
+  "name": "@versiwfekit/prettier",
+  "version": "1.0.0",
+  "description": "prettier config used by versiw",
+  "author": "versiw",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "browser": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "versiw",
+    "versiwfekit",
+    "prettier",
+    "prettier-config"
+  ],
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
+  }
+}

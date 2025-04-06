@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    // 编译输出目录
+    "outDir": "./dist",
+    // 启用类型声明文件生成（生成.d.ts文件）
+    "declaration": true,
+    // 指定类型声明文件的输出目录
+    "declarationDir": "./dist",
+    // 仅生成声明文件（不产生.js/.jsx等运行时文件）
+    "emitDeclarationOnly": true
+  },
+  // 包含范围（仅处理src目录下的TypeScript文件）
+  "include": ["./src/**/*.ts"],
+  // 排除目录
+  "exclude": ["node_modules"]
+}

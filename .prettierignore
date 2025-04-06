@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+
+# compiled output
+dist
+
+# lock files
+pnpm-lock.yaml
+package-lock.json

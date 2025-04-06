@@ -1,0 +1,29 @@
+{
+  // "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    // 开启严格模式，包含noImplicitAny、strictNullChecks等检查
+    "strict": true,
+    // 跳过库文件（.d.ts）的类型检查以提升编译速度
+    "skipLibCheck": true,
+    // 生成对应的.d.ts类型声明文件
+    "declaration": false,
+    // "declarationDir": "./dist",
+    // 仅生成声明文件，不输出JavaScript文件
+    // "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    // 不生成任何输出文件（需配合declaration=true使用）
+    "noEmit": true,
+    // 不生成源映射文件（.map），关闭调试源码功能
+    "sourceMap": false,
+    // 检查未使用的局部变量并报错，避免冗余代码
+    "noUnusedLocals": true,
+    // 启用CommonJS与ES模块的互操作性支持
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*.ts", "./env.d.ts", "build.config.ts"],
+  "exclude": ["node_modules"]
+}
