@@ -20,6 +20,9 @@ importers:
       '@versiwfekit/verify-commit':
         specifier: workspace:*
         version: link:packages/verify-commit
+      create-vfk:
+        specifier: workspace:*
+        version: link:packages/create-vfk
       lint-staged:
         specifier: ^15.5.0
         version: 15.5.0
@@ -44,6 +47,9 @@ importers:
       '@clack/prompts':
         specifier: ^0.10.0
         version: 0.10.0
+      '@types/cross-spawn':
+        specifier: ^6.0.6
+        version: 6.0.6
       commander:
         specifier: ^13.1.0
         version: 13.1.0
@@ -532,6 +538,9 @@ packages:
 
   '@types/argparse@1.0.38':
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
+
+  '@types/cross-spawn@6.0.6':
+    resolution: {integrity: sha512-fXRhhUkG4H3TQk5dBhQ7m/JDdSNHKwR2BBia62lhwEIq9xGiQKLxd6LymNhn47SjXhsUEPmxi+PKw2OkW4LLjA==}
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -2228,6 +2237,10 @@ snapshots:
   '@trysound/sax@0.2.0': {}
 
   '@types/argparse@1.0.38': {}
+
+  '@types/cross-spawn@6.0.6':
+    dependencies:
+      '@types/node': 22.14.0
 
   '@types/estree@1.0.7': {}
 

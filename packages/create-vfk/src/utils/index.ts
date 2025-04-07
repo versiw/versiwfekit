@@ -2,7 +2,8 @@ import { log } from '@clack/prompts'
 import { SpawnOptions } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
-const spawn = require('cross-spawn')
+// const spawn = require('cross-spawn')
+import spawn from 'cross-spawn'
 
 /**
  * spawn 的 Promise 简单实现
@@ -136,6 +137,7 @@ export const createExtendedConfig = async () => {
   /** @type {import("prettier").Config} */
   const config = {
     ...versiwfekitPrettierConfig,
+    // 自定义 prettier 配置
     semi: true,
   };
   

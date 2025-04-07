@@ -11,9 +11,7 @@ export default defineBuildConfig({
     emitCJS: true,
     inlineDependencies: true,
     esbuild: {
-      // target: 'node18',
       minify: true
     }
   }
-  // externals: ['path','fs','execa',"@clack/prompts","commander"],
 })

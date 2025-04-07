@@ -40,7 +40,7 @@ export async function handleConfig() {
 
   try {
     if (actions.mode === 'default') {
-      managePackageJson('add', 'prettier', '@versiwfekit/prettier')
+      managePackageJson('add', 'prettier', '@versiwfekit/prettier', { overwrite: true })
       deleteConfigFile('.prettierrc.js')
       log.success('已为您正确配置 package.json 文件，并删除 .prettierrc.* 配置文件 (如果存在)!')
     } else if (actions.mode === 'extended') {

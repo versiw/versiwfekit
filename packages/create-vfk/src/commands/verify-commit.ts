@@ -32,10 +32,10 @@ export const handleConfig = async () => {
 
   try {
     if (actions.mode === 'default') {
-      managePackageJson('add', 'scripts.commit', 'pnpm versiwfekit-verify-commit')
+      managePackageJson('add', 'scripts.commit', 'versiwfekit-verify-commit', { overwrite: true })
       log.success('已为您正确配置 package.json 文件，运行 npm run commit 开始提交!')
     } else if (actions.mode === 'uninstall') {
-      managePackageJson('remove', 'scripts.commit', 'pnpm versiwfekit-verify-commit')
+      managePackageJson('remove', 'scripts.commit', 'versiwfekit-verify-commit')
       log.success('已为您正确配置 package.json 文件和卸载 npm 依赖!')
       const s = spinner()
       s.start('正在卸载...')

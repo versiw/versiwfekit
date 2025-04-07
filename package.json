@@ -9,10 +9,14 @@
     "postinstall": "simple-git-hooks",
     "build": "pnpm -r --filter=./packages/* run build",
     "format": "prettier --write --cache --ignore-unknown .",
-    "commit": "pnpm versiwfekit-verify-commit",
+    "commit": "versiwfekit-verify-commit",
     "changeset": "changeset",
-    "dev:vfk": "pnpm --filter create-vfk run build  && pnpm vfk",
-    "dev:commit": "pnpm --filter verify-commit run build  && pnpm versiwfekit-verify-commit"
+    "changeset:exit": "changeset pre exit",
+    "changeset:beta": "changeset pre enter beta",
+    "changeset:version": "changeset version",
+    "changeset:publish": "pnpm run build && changeset publish",
+    "dev:vfk": "pnpm --filter create-vfk run build  && vfk",
+    "dev:commit": "pnpm --filter verify-commit run build  && versiwfekit-verify-commit"
   },
   "keywords": [
     "versiw",
@@ -23,6 +27,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
     "@types/node": "^22.14.0",
+    "create-vfk": "workspace:*",
     "@versiwfekit/prettier": "workspace:*",
     "@versiwfekit/verify-commit": "workspace:*",
     "lint-staged": "^15.5.0",

@@ -1,0 +1,25 @@
+# create-vfk
+
+## 1.0.1-beta.2
+
+### Patch Changes
+
+- 测试 import 导入
+
+## 1.0.1-beta.1
+
+### Patch Changes
+
+- 测试
+
+## 1.0.1-beta.1
+
+### Patch Changes
+
+- 测试cross-spawn模块打包错误问题
+
+## 1.0.1-beta.0
+
+### Patch Changes
+
+- chore: 构建工具变更，测试发布
