@@ -11,7 +11,6 @@ export default defineBuildConfig({
     emitCJS: true,
     inlineDependencies: true,
     esbuild: {
-      // target: 'node18',
       minify: true
     }
   }

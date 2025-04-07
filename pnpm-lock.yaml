@@ -71,6 +71,9 @@ importers:
       '@clack/prompts':
         specifier: ^0.10.0
         version: 0.10.0
+      '@types/cross-spawn':
+        specifier: ^6.0.6
+        version: 6.0.6
       commander:
         specifier: ^13.1.0
         version: 13.1.0

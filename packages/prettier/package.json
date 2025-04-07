@@ -1,6 +1,6 @@
 {
   "name": "@versiwfekit/prettier",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1",
   "description": "prettier config used by versiw",
   "author": "versiw",
   "license": "MIT",

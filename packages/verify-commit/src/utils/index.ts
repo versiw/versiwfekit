@@ -1,5 +1,5 @@
 import { SpawnOptions } from 'node:child_process'
-const spawn = require('cross-spawn')
+import spawn from 'cross-spawn'
 
 /**
  * spawn 的 Promise 简单实现

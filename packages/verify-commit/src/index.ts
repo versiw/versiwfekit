@@ -1,9 +1,10 @@
+#!/usr/bin/env node
 import pico from 'picocolors'
 import { program } from 'commander'
 import { cancel, intro, select, text, group, confirm, log, spinner, outro } from '@clack/prompts'
 import fs from 'node:fs'
 import path from 'node:path'
-const spawn = require('cross-spawn')
+import spawn from 'cross-spawn'
 import defaultConfig from './commitConfig.ts'
 import { spawnAsync } from './utils/index.ts'
 
@@ -11,8 +12,12 @@ import { spawnAsync } from './utils/index.ts'
 const checkStagedFiles = (): boolean => {
   try {
     // 0：暂存区为空，1：暂存区非空
-    const status = spawn.sync('git', ['diff', '--cached', '--quiet'])
-    return status.status
+    const res = spawn.sync('git', ['diff', '--cached', '--quiet'])
+    if (res.status !== null) {
+      return Boolean(res.status)
+    } else {
+      throw new Error(` ${res.stderr.toString()}`)
+    }
   } catch (err) {
     log.error(`❌ 无法检查暂存区状态: ${(err as Error).message}`)
     process.exit(0)

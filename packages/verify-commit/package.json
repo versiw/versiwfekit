@@ -1,6 +1,6 @@
 {
   "name": "@versiwfekit/verify-commit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "verify-commit config used by versiw",
   "author": "versiw",
   "license": "MIT",
@@ -16,9 +16,21 @@
   "scripts": {
     "build": "unbuild"
   },
-  "keywords": [],
+  "keywords": [
+    "versiw",
+    "versiwfekit",
+    "vfk",
+    "create-vfk",
+    "verify-commit",
+    "commit message"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "devDependencies": {
     "@clack/prompts": "^0.10.0",
+    "@types/cross-spawn": "^6.0.6",
     "commander": "^13.1.0",
     "cross-spawn": "^7.0.6",
     "picocolors": "^1.1.1",

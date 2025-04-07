@@ -1,6 +1,6 @@
 {
   "name": "create-vfk",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1",
   "description": "versiwfekit 前端工具集 cli 工具，一键配置",
   "author": "versiw",
   "license": "MIT",
