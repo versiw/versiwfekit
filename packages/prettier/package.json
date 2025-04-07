@@ -1,6 +1,6 @@
 {
   "name": "@versiwfekit/prettier",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "prettier config used by versiw",
   "author": "versiw",
   "license": "MIT",
@@ -21,6 +21,10 @@
     "prettier",
     "prettier-config"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "peerDependencies": {
     "prettier": ">=3.0.0"
   }
