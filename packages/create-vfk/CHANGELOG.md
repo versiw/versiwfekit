@@ -1,5 +1,19 @@
 # create-vfk
 
+## 1.0.2
+
+### Patch Changes
+
+- 新增 README 文档；
+- 构建 package.json 文件；
+
+## 1.0.2-beta.0
+
+### Patch Changes
+
+- 新增 README 文档；
+- 构建 package.json 文件；
+
 ## 1.0.1
 
 ### Patch Changes

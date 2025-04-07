@@ -1,6 +1,6 @@
 {
   "name": "create-vfk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "versiwfekit 前端工具集 cli 工具，一键配置",
   "author": "versiw",
   "license": "MIT",
@@ -20,8 +20,18 @@
     "versiw",
     "versiwfekit",
     "vfk",
-    "create-vfk"
+    "create-vfk",
+    "config",
+    "prettier",
+    "prettier-config",
+    "verify-commit",
+    "commit message"
   ],
+  "homepage": "https://github.com/versiw/versiwfekit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/versiw/versiwfekit"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
